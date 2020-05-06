@@ -78,4 +78,4 @@ Depois que o merge da sua pull request for feito, você pode deletar a sua branc
 
 ---
 
-Feito por [HenriqueVazquez](https://www.linkedin.com/in/henrique-vazquez-11905ab6/)
+Feito por [HenriqueVazquez] :wink: (https://www.linkedin.com/in/henrique-vazquez-11905ab6/)
