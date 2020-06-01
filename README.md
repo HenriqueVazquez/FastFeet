@@ -43,7 +43,7 @@ Importe o arquivo `Insomnia_FastFeet_HenriqueVazquez.json` no Insomnia ou clique
 ### Backend
 
 - A partir da raiz do projeto, entre na pasta executando `cd backend`;
-- Ajuste as suas variáveis de ambiente no arquivo .env;
+- Ajuste as suas variáveis de ambiente no arquivo `.env`;
 - Execute `yarn` para instalar as dependências;
 - Execute `docker-compose up -d` para montar o ambiente;
 - Execute `yarn sequelize db:migrate` para executar as migrations;
