@@ -22,7 +22,7 @@
 
 
  ## :rocket: 
- <p> Tecnologias </P>
+ ##Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
