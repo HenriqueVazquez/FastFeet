@@ -1,21 +1,45 @@
+import 'dotenv/config';
 import Sequelize from 'sequelize';
+import mongoose from 'mongoose';
 
-import dataBaseConfig from '../config/database';
+import databaseConfig from '../config/database';
 
 import User from '../app/models/User';
-import Recipients from '../app/models/Recipients';
+import Recipient from '../app/models/Recipient';
+import FileAvatar from '../app/models/File_avatar';
+import FileSignature from '../app/models/File_signature';
+import Deliveryman from '../app/models/Deliveryman';
+import Delivery from '../app/models/Delivery';
 
-const models = [User, Recipients];
+const models = [
+  User,
+  Recipient,
+  FileAvatar,
+  FileSignature,
+  Deliveryman,
+  Delivery,
+];
 
 class Database {
   constructor() {
     this.init();
+    this.mongo();
   }
 
   init() {
-    this.connection = new Sequelize(dataBaseConfig);
+    this.connection = new Sequelize(databaseConfig);
 
-    models.map(model => model.init(this.connection));
+    models
+      .map(model => model.init(this.connection))
+      .map(model => model.associate && model.associate(this.connection.models));
+  }
+
+  mongo() {
+    this.mongoConnection = mongoose.connect(process.env.MONGO_URL, {
+      useNewUrlParser: true,
+      useFindAndModify: true,
+      useUnifiedTopology: true,
+    });
   }
 }
 
