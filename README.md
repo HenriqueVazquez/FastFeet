@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Sequelize](https://sequelize.org/)
 - [Yup](https://github.com/jquense/yup)
 
-## :computer: Instalação, execução e desenvolvimento
+## :computer:             Instalação, execução e desenvolvimento
 
 Importe o arquivo `Insomnia_FastFeet_HenriqueVazquez.json` no Insomnia ou clique no botão [Run in Insomnia](#insomniaButton)
 
@@ -41,7 +41,7 @@ Importe o arquivo `Insomnia_FastFeet_HenriqueVazquez.json` no Insomnia ou clique
 
 **Faça um clone desse repositório**
 
-### Backend
+###                        Backend
 
 - A partir da raiz do projeto, entre na pasta executando `cd backend`;
 - Ajuste as suas variáveis de ambiente no arquivo `.env`;
@@ -51,7 +51,7 @@ Importe o arquivo `Insomnia_FastFeet_HenriqueVazquez.json` no Insomnia ou clique
 - Para executar somente a migration de `admin-user` execute o comando `yarn sequelize db:seed --seed 20200504181041-admin-user.js`
 - Execute `yarn start` para iniciar o servidor;
 
-## 🤔    Como contribuir
+## 🤔                   Como contribuir
 
 - **Faça um fork deste repositório**
 
