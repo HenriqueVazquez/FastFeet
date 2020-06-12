@@ -51,7 +51,7 @@ Importe o arquivo `Insomnia_FastFeet_HenriqueVazquez.json` no Insomnia ou clique
 - Para executar somente a migration de `admin-user` execute o comando `yarn sequelize db:seed --seed 20200504181041-admin-user.js`
 - Execute `yarn start` para iniciar o servidor;
 
-## Como contribuir 🤔
+##Como contribuir 🤔
 
 - **Faça um fork deste repositório**
 
