@@ -6,7 +6,7 @@
   <p align="center"> Arquivos do primeiro e segundo desafio disponiveis, atualização em breve, conforme for terminando os proximos.</p>
   
  <p align="center">
- <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#tecnologias-rocket">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#instalação-execução-e-desenvolvimento--">Instalação, execução e desenvolvimento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#como-contribuir">Como contribuir</a>
 </p>
