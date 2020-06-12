@@ -21,7 +21,8 @@
 - [Etapa 2](https://github.com/HenriqueVazquez/FastFeet/blob/master/DESAFIO2.md)
 
 
-<p> ## :rocket:  Tecnologias </P>
+ ## :rocket: 
+ <p> Tecnologias </P>
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
