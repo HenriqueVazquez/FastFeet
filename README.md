@@ -39,7 +39,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [dotenv](https://github.com/motdotla/dotenv#readme)
 - [express-async-errors](https://github.com/davidbanham/express-async-errors#readme)
 - [express-handlebars](https://github.com/express-handlebars/express-handlebars)
-- [mongoose] (https://mongoosejs.com/)
+- [mongoose](https://mongoosejs.com/)
 - [multer](https://github.com/expressjs/multer#readme)
 - [nodemailer-express-handlebars](https://github.com/yads/nodemailer-express-handlebars)
 - [nodemailer](https://nodemailer.com/)
