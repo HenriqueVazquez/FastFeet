@@ -1,0 +1,69 @@
+version: '3.8'
+
+networks:
+  fastfeet-network:
+    driver: bridge
+
+services:
+  FastFeet:
+    build: .
+    volumes:
+      - .:/home/node/api
+    environment:
+      - DB_HOST=postgresFast
+      - REDIS_URL=redisFast
+      - MONGO_URL=mongoFast
+    depends_on:
+      - postgresFast
+      - mongoFast
+    networks:
+      - fastfeet-network
+    container_name: FastFeet
+    command: yarn start
+    ports:
+      - '3333:3333'
+
+  fastQueue:
+    build: .
+    environment:
+      - DB_HOST=postgresFast
+      - REDIS_URL=redisFast
+      - MONGO_URL=mongoFast
+    depends_on:
+      - redisFast
+    networks:
+      - fastfeet-network
+    container_name: fastQueue
+    command: yarn queue
+
+  postgresFast:
+    image: postgres
+    container_name: postgresFast
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASS}
+      - POSTGRES_DB=${DB_NAME}
+    ports:
+      - '5432:5432'
+    networks:
+      - fastfeet-network
+
+  mongoFast:
+    image: mongodb:latest
+    container_name: mongoFast
+    environment:
+      - MONGO_URL=${MONGO_URL}
+    ports:
+      - '27017:27017'
+    networks:
+      - fastfeet-network
+
+  redisFast:
+    image: bitnami/redis:latest
+    container_name: redisFast
+    environment:
+      - ALLOW_EMPTY_PASSWORD=no
+      - REDIS_PASSWORD=${REDIS_PASS}
+    networks:
+      - fastfeet-network
+
