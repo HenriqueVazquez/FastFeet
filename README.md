@@ -18,6 +18,7 @@
 <strong>Links dos desafios:</strong>
 
 - [Etapa 1](https://github.com/HenriqueVazquez/FastFeet/blob/master/DESAFIO1.md)
+- [Etapa 2](https://github.com/HenriqueVazquez/FastFeet/blob/master/DESAFIO2.md)
 
 
 ## :rocket: Tecnologias
