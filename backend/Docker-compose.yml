@@ -51,7 +51,7 @@ services:
   mongoFast:
     image: mongodb:latest
     container_name: mongoFast
-    environment:      
+    environment:
       - MONGO_URL=${MONGO_URL}
     ports:
       - '27017:27017'
@@ -66,3 +66,4 @@ services:
       - REDIS_PASSWORD=${REDIS_PASS}
     networks:
       - fastfeet-network
+
